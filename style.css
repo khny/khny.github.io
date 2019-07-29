@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Concert+One|Darker+Grotesque&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Roboto:700);
+
+h1 {
+  animation:glow 10s ease-in-out infinite;
+  
+  
+
+/* For less laggy effect, uncomment this:
+  
+  animation:none;
+  -webkit-text-stroke:1px #fff; 
+  
+=========== */
+  
+}
+
+* { box-sizing:border-box; }
+
+body {
+  background:#0a0a0a;
+  /*overflow:hidden;*/
+  text-align:center;
+}
+
+figure {
+  animation:wobble 5s ease-in-out infinite;
+  transform-origin:center center;
+  transform-style:preserve-3d;
+}
+
+@keyframes wobble {
+  0%,100%{ transform:rotate3d(1,1,0,40deg); }
+  25%{ transform:rotate3d(-1,1,0,40deg); }
+  50%{ transform:rotate3d(-1,-1,0,40deg); }
+  75%{ transform:rotate3d(1,-1,0,40deg); }
+}
+
+h1 {
+  display:block;
+  width:100%;
+  padding:40px;
+  line-height:1.5;
+  font:900 8em 'Concert One', sans-serif;
+  text-transform:uppercase;
+  position:absolute;
+  color:#0a0a0a;
+  font-size: 4em;
+}
+
+@keyframes glow {
+  0%,100%{ text-shadow:0 0 30px red; }
+  25%{ text-shadow:0 0 30px orange; }
+  50%{ text-shadow:0 0 30px forestgreen; }
+  75%{ text-shadow:0 0 30px cyan; }
+}
+
+h1:nth-child(2){ transform:translateZ(5px); }
+h1:nth-child(3){ transform:translateZ(10px);}
+h1:nth-child(4){ transform:translateZ(15px); }
+h1:nth-child(5){ transform:translateZ(20px); }
+h1:nth-child(6){ transform:translateZ(25px); }
+h1:nth-child(7){ transform:translateZ(30px); }
+h1:nth-child(8){ transform:translateZ(35px); }
+h1:nth-child(9){ transform:translateZ(40px); }
+h1:nth-child(10){ transform:translateZ(45px); }
+
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  margin: 2em;
+}
+
+p {
+  color: white;
+  font-family: 'Darker Grotesque', sans-serif;
+  font-size: 2em;
+}
+
+@-webkit-keyframes example {
+	0%{transform: rotate(0deg);}
+	25%{transform: rotate(10deg);}
+	50%{transform: rotate(-10deg);}
+	75%{transform: rotate(10deg);}
+	100%{transform: rotate(0deg);}
+}
+
+* {margin: 0px;}
+
+body {
+  background: #191919;
+}
+
+#wrap {
+  color: #DFE2DB;
+  font-family: "Roboto", sans-serif;
+  float:left;
+  /*border: 5px solid #DFE2DB;*/
+  /*border-radius: 5%;*/
+  width: 20%;
+  margin-right:100px;
+	letter-spacing: -3px;
+	position: relative;
+	-webkit-animation-name: example;
+  -webkit-animation-duration: 2s;
+	-webkit-animation-timing-function: ease;
+  -webkit-animation-iteration-count: infinite;
+}
+
+#wrap p {
+  position: relative;
+  left: 2px;
+}
+
+#imgholder{
+  display:inline-block;
+  padding-top:150px;
+}
